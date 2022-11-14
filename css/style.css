@@ -11,6 +11,18 @@
     --accent-btn-color: #188CE8;
     --footer-contact-color: rgba(255, 255, 255, 0.6);
 }
+p, h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+button{
+cursor: pointer;
+}
 
 /* ---------Універсальні класи--------- */
 body {
@@ -23,6 +35,11 @@ body {
     letter-spacing: 0.03em;  
 }
 
+.cotainer {
+    width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+}
 *,
 *::before,
 *::after {
@@ -30,11 +47,17 @@ body {
 }
 
 .link {
+    display: inline-block;
+    padding: 20px;
+    
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    
 }
 
 .link:hover,
@@ -44,6 +67,9 @@ body {
 
 .list {
     list-style: none;
+
+    padding: 0;
+    margin: 0;
     
 }
 
@@ -59,6 +85,17 @@ body {
 
 /* ---------стилі для index.html--------- */
 /*--------- Хедер--------- */
+/* .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+/* .site-nav {
+    display: flex;
+    justify-content: space-between;
+} */
+
 .logo {
     color: var(--primary-logo-color);
     font-family: Raleway, sans-serif;
@@ -77,20 +114,28 @@ body {
     color: var(--accent-text-color);
 }
 
+/* .nav-list {
+    display: flex;
+justify-content: space-around;
+    margin-left: 93px;
+    
+} */
+
 .nav-link {
-    color: var(--primary-link-color);
-   
+     color: var(--primary-link-color);
 }
 
 .current {
     color: var(--accent-text-color);
-
 }
 
 .contacts-link {
     color: var(--title-text-color);
 }
 
+/* .contacts-list {
+    display: flex;
+} */
 
 /*--------- Герой--------- */
 .hero {
@@ -109,6 +154,11 @@ body {
 }
 
 .hero-btn {
+    display: block;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 4px;
+
     font-family: inherit;
     background-color: var(--accent-bg-color);
     color: var(--primary-white-color);
@@ -116,11 +166,10 @@ body {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    padding: 12px 28px;
-    border: none;
+    
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor:pointer;
+    
+    
 
 }
 
@@ -130,6 +179,9 @@ body {
 }
 
 /*--------- Переваги--------- */
+/* .benefits-list {
+    display: flex;
+} */
 
 .benefits-items {
     font-weight: 700;
@@ -150,6 +202,10 @@ body {
     line-height: 1.17;
     text-align: center;
 }
+
+/* .promo-list, .team-list {
+    display: flex;
+} */
 
 .team {
     background: var(--second-bg-color);

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Головна</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,27 +22,34 @@
 
 <body>
     <!-- Хедер -->
-    <header>
-        <nav>
+    
+    <header class="main-header">
+        <div class="container">
+        <nav class="site-nav">
             <a class="logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
-            <ul class="list">
+            <ul class="nav-list list">
                 <li><a class="nav-link link current" href="./index.html">Студія</a></li>
                 <li><a class="nav-link link" href="./portfolio.html">Портфоліо</a></li>
                 <li><a class="nav-link link" href="./contacts.html">Контакти</a></li>
             </ul>
         </nav>
-        <ul class="list">
+        <ul class="contacts-list list">
             <li> <a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li> <a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
 
     <main>
         <!-- Герой -->
+    
         <section class="section hero">
+            <div class="container">
             <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
             <button type="button" class="hero-btn">Замовити послугу</button>
+        </div>
         </section>
+        
         <!-- Переваги -->
         <div class="container">
         <section class="section benefits">
@@ -63,11 +73,12 @@
                 </li>
             </ul>
         </section>
-        </div>
+            </div>
         <!-- Напрямки діяльності -->
+        <div class="container">
         <section class="section promo">
             <h2 class="promo-title">Чим ми займаємося</h2>
-            <ul class="list">
+            <ul class="promo-list list">
                 <li>
                     <img src="./images/box-1.jpg" alt="працюють на клавіатурі за монітором та планшетом" width="370">
                 </li>
@@ -79,10 +90,13 @@
                 </li>
             </ul>
         </section>
+        </div>
         <!-- Команда -->
+        <div class="container">
         <section class="section team">
             <h2 class="team-title">Наша команда</h2>
-            <ul class="list">
+ 
+            <ul class="team-list list">
                 <li>
                     <img src="./images/foto-1.jpg" alt="фото Ігор Дем'яненко" width="270">
                     <h3 class="team-name">Ігор Дем'яненко</h3>
@@ -105,9 +119,11 @@
                 </li>
             </ul>
         </section>
+        </div>
     </main>
     <!-- Футер -->
     <footer>
+        <div class="container">
         <a class="logo" ref="./index.html"><span class="logo-span">Web</span>Studio</a>
         <address>
             <ul class="list">
@@ -119,6 +135,7 @@
                 <li> <a class="contacts link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </address>
+        </div>
     </footer>
 </body>
 
