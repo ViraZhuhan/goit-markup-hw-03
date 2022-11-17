@@ -59,17 +59,11 @@ body {
 }
 
 .link {
-    display: inline-block;
-    padding: 20px;
-
-        
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-
-    
 }
 
 .link:hover,
@@ -79,9 +73,7 @@ body {
 
 .list {
     list-style: none;
-
     padding: 0;
-    margin: 0;
     
 }
 
@@ -98,23 +90,40 @@ body {
 /* ---------стилі для index.html--------- */
 /*--------- Хедер--------- */
 
-.header-flex, .nav-list {
+.header>.container  {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+    border: 1px solid #ECECEC;
 }
 
+.site-nav {
+    display: flex;
+    align-items: center; 
+}
+
+.nav-list {
+   display: flex;
+   align-items: center;
+   margin-left: auto;
+}
+
+.nav-list>li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav-link {
+     color: var(--primary-link-color);
+}
+
+
 .logo {
-    display: inline-block;
-    padding: 20px;
-
-
     color: var(--primary-logo-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+    margin-right: 93px;
 }
 
 .logo:hover,
@@ -127,21 +136,24 @@ body {
 }
 
 
-.nav-link {
-     color: var(--primary-link-color);
-}
-
 .current {
     color: var(--accent-text-color);
 }
 
-.contacts-link {
-    color: var(--title-text-color);
+.contacts-list {
+    display: flex;
+    margin-left: 344px;
+    
 }
 
-.contacts-list {
-    display: flex;}
+.contacts-link {
+    color: var(--title-text-color); 
+    display: flex;
+}
 
+.contacts-list>li:not(:last-child) {
+    margin-right: 50px;
+}
 
 /*--------- Герой--------- */
 .hero {
@@ -162,10 +174,6 @@ body {
     padding-bottom: 30px;
     margin: auto; 
 
-}
-
-.hero-button-center {
-        padding-bottom: 200px;
 }
 
 .hero-btn {
@@ -192,11 +200,18 @@ body {
     background-color: var(--accent-btn-color);
 }
 
+.button-center {
+    padding: 0 692px 200 px;
+}
+
 /*--------- Переваги--------- */
 .benefits-list {
     display: flex;
-    justify-content: space-between;
-    padding-top: 94px;
+    margin-top: 94px;
+}
+
+.benefits-list:not(:last-child) {
+    margin-right: 30px;
 }
 
 .benefits-items {
@@ -206,23 +221,19 @@ body {
 }
 
 .benefits-text {
-    padding-top: 10px;
+    margin-top: 10px;
     
     color: var(--title-text-color);
     letter-spacing: 0.03em;
 }
 
 /*--------- Напрямки діяльності та Команда---------*/
-.promo,
-.team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .promo-title,
 .team-title {
     display: block;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    padding-top: 94px;
 
     font-weight: 700;
     font-size: 36px;
@@ -230,38 +241,21 @@ body {
     text-align: center;
 }
 
-.promo-list, 
-.team-list {
+.promo-list {
     display: flex;
-    justify-content: space-between;
-    
+    margin-bottom: 94px; 
+}
+
+.promo-list>li:not(:last-child)  {
+    margin-right: 30px;
+}
+
+.promo-list>img {
+    min-width: 370px;
 }
 
 .promo-list {
     background-color: var(--primary-white-color);
-
-}
-
-.team-item {
-    max-width:  270px;
-    max-height: 368px;
-    margin-right: 30px;
-
-}
-
-.team-item:nth-last-child() {
-    margin-right: 0;
-}
-
-.team-item>img {
-   display: block;
-   margin-right: 30px;
-    width: 370px;
-}
-
-.team-list>img {
-    display: block;
-    padding: 30px;
 }
 
 
@@ -270,11 +264,28 @@ body {
     background: var(--second-bg-color);
 }
 
-.team-name {
-    display: block;
-    padding-top: 10px;
+.team-list {
+    display: flex;
 
-    
+}
+
+.team-item {
+    background-color: var(--primary-white-color);
+    margin-bottom: 94px;
+    width: 270px;
+}
+
+.team-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-item>img {
+    width: 270px;
+    margin-bottom: 30px;
+}
+
+.team-name {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -282,14 +293,13 @@ body {
 }
 
 .team-text {
-    padding-top: 10px;
-    padding-bottom: 30px;
-
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.19px;
     text-align: center;
     color: var(--title-text-color);
 }
+
 
 /*--------- Футер---------*/
 footer {
@@ -297,13 +307,18 @@ footer {
 }
 
 footer .logo {
+display: block;
 padding-left: 0;
+padding-top: 60px;
 margin-bottom: 20px;
 
-    color: var(--primary-white-color);
+color: var(--primary-white-color);
 }
 
 .address, .contacts {
+    display: block;
+    margin-bottom: 9px;
+
     color: var(--primary-white-color);
     font-style: normal;
     text-decoration: none;
@@ -311,6 +326,10 @@ margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.71;
 }
+.address {
+    margin-top: 20px;
+}
+
 
 .address:hover,
 .address:focus {
@@ -324,16 +343,34 @@ footer .contacts {
 
 /*--------- стилі для portfolio.html--------- */
 /*--------- Приклади--------- */
+.preview-button {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 94px;
+
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    }
+
 
 .button-item {
+    min-width: 73px;
+    height: 38px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    
     background-color: var(--second-bg-color);
-    cursor: pointer; 
+    border: transparent;
+}
+.preview-button>li:not(:last-child) {
+    margin-right: 8px;
 }
 
 .button-item:hover,
@@ -344,20 +381,42 @@ footer .contacts {
     color: var(--primary-white-color);
 }
 
+.preview-wrap {
+    max-width: 370px;
+    min-height: 404px;
+    margin-top: 34px;
+    border: 1px solid #EEEEEE;
+}
+
 .preview-list {
+    display: flex;
+   
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .preview-list>li:not(:last-child) {
+    margin-right: 30px;
+  }
+
+
+.preview-list>img{
+    width: 370px;
+    margin-bottom: 20px;
+}
+ 
+
+ .preview-title {
+    margin-bottom: 4px;
     color: var(--primary-text-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-  }
-
-.preview-button {
-    font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0.06em;      
-}
+ }
 
 .preview-text {
+    margin-bottom: 20px;
     color: var(--title-text-color);
     font-weight: 400;
     font-size: 16px;
