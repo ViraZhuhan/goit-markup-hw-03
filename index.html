@@ -23,11 +23,14 @@
 <body>
     <!-- Хедер -->
     
-    <header class="main-header">
+    <header>
         <div class="container">
-        <nav class="site-nav">
-            <a class="logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
-            <ul class="nav-list list">
+            <div class="header-flex">
+                  <nav class="site-nav">
+                 <ul class="nav-list list">
+                    <li>
+                        <a class="logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
+            </li>
                 <li><a class="nav-link link current" href="./index.html">Студія</a></li>
                 <li><a class="nav-link link" href="./portfolio.html">Портфоліо</a></li>
                 <li><a class="nav-link link" href="./contacts.html">Контакти</a></li>
@@ -36,23 +39,28 @@
         <ul class="contacts-list list">
             <li> <a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li> <a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </ul></div>
+        
         </div>
     </header>
 
     <main>
         <!-- Герой -->
-    
-        <section class="section hero">
+            <section class="section hero">
             <div class="container">
+            <div class="hero-center">
             <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+            </div>
+            <div class="hero-button-center">
             <button type="button" class="hero-btn">Замовити послугу</button>
         </div>
+    </div>
         </section>
         
         <!-- Переваги -->
-        <div class="container">
+       
         <section class="section benefits">
+            <div class="container">
             <h2 class="visual-hidden">Переваги</h2>
             <ul class="benefits-list list">
                 <li>
@@ -72,11 +80,13 @@
                     <p class="benefits-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
             </ul>
-        </section>
             </div>
+        </section>
+            
         <!-- Напрямки діяльності -->
-        <div class="container">
+       
         <section class="section promo">
+            <div class="container">
             <h2 class="promo-title">Чим ми займаємося</h2>
             <ul class="promo-list list">
                 <li>
@@ -89,44 +99,55 @@
                     <img src="./images/box-3.jpg" alt="працюють за планшетом біля монітора" width="370">
                 </li>
             </ul>
+            </div>
         </section>
-        </div>
+        
         <!-- Команда -->
-        <div class="container">
+       
         <section class="section team">
+            <div class="container">
             <h2 class="team-title">Наша команда</h2>
  
             <ul class="team-list list">
+               <div class="team-item">
                 <li>
                     <img src="./images/foto-1.jpg" alt="фото Ігор Дем'яненко" width="270">
                     <h3 class="team-name">Ігор Дем'яненко</h3>
                     <p class="team-text">Product Designer</p>
                 </li>
+                </div>
+                <div class="team-item">
                 <li>
                     <img src="./images/foto-2.jpg" alt="фото Ольга Рєпіна" width="270">
                     <h3 class="team-name">Ольга Рєпіна</h3>
                     <p class="team-text">Frontend Developer</p>
                 </li>
-                <li>
+                </div>
+                <div class="team-item">
+                <li >
                     <img src="./images/foto-3.jpg" alt="фото Микола Тарасов" width="270">
                     <h3 class="team-name">Микола Тарасов</h3>
                     <p class="team-text">Marketing</p>
                 </li>
+                </div>
+                <div class="team-item">
                 <li>
                     <img src="./images/foto-4.jpg" alt="фото Михайло Єрмаков" width="270">
                     <h3 class="team-name">Михайло Єрмаков</h3>
                     <p class="team-text">UI Designer</p>
                 </li>
+                </div>
             </ul>
+            </div>
         </section>
-        </div>
+       
     </main>
     <!-- Футер -->
     <footer>
         <div class="container">
         <a class="logo" ref="./index.html"><span class="logo-span">Web</span>Studio</a>
         <address>
-            <ul class="list">
+            <ul class="footer-list list">
                 <li> <a class="address"href="https://goo.gl/maps/M5fKYAZPapUJa6bE6"  target="_blank"
                         rel="noopener nofollow noreferrer">
                         м. Київ, пр-т Лесі Українки, 26</a>
