@@ -244,21 +244,17 @@ body {
 .promo-list {
     display: flex;
     margin-bottom: 94px; 
+    gap: 30px;
+    background-color: var(--primary-white-color)
 }
 
-.promo-list>li:not(:last-child)  {
+/* .promo-list>li:not(:last-child)  {
     margin-right: 30px;
-}
+} */
 
 .promo-list>img {
     min-width: 370px;
 }
-
-.promo-list {
-    background-color: var(--primary-white-color);
-}
-
-
 
 .team {
     background: var(--second-bg-color);
@@ -266,17 +262,17 @@ body {
 
 .team-list {
     display: flex;
-
+    gap: 30px;
 }
+
+/* .team-list>li:not(:last-child)  {
+    margin-right: 30px;
+} */
 
 .team-item {
     background-color: var(--primary-white-color);
     margin-bottom: 94px;
-    width: 270px;
-}
-
-.team-item:not(:last-child) {
-    margin-right: 30px;
+    width: calc((100% - 90px)/4);
 }
 
 .team-item>img {
@@ -343,11 +339,15 @@ footer .contacts {
 
 /*--------- стилі для portfolio.html--------- */
 /*--------- Приклади--------- */
+.preview {
+    margin-bottom: 94px;
+}
 .preview-button {
     display: flex;
     align-content: center;
     justify-content: center;
     margin-top: 94px;
+    margin-bottom: 50px;
 
     font-size: 18px;
     line-height: 36px;
@@ -382,44 +382,53 @@ footer .contacts {
 }
 
 .preview-wrap {
-    max-width: 370px;
+    width: 370px;
     min-height: 404px;
-    margin-top: 34px;
     border: 1px solid #EEEEEE;
 }
 
 .preview-list {
     display: flex;
+    flex-grow: 1;
+    gap: 30px;
+    
    
     align-items: stretch;
     flex-wrap: wrap;
     margin: 0 auto;
   }
 
-  .preview-list>li:not(:last-child) {
+  /* .preview-list>li:not(:last-child) {
     margin-right: 30px;
-  }
-
+  } */
 
 .preview-list>img{
     width: 370px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
  
 
  .preview-title {
     margin-bottom: 4px;
+    margin-left: 24px;
+    margin-right: 24px;
+
     color: var(--primary-text-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    text-align: start;
  }
 
 .preview-text {
     margin-bottom: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+
     color: var(--title-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
+    text-align: start;
 }
